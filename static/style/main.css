@@ -451,3 +451,37 @@
 .contact__email:hover {
     text-decoration: underline;
 }
+
+.survey {
+  background-color: #1f1f1f; /* sombre mais doux */
+  padding: 60px 20px;
+  text-align: center;
+  color: white; /* texte blanc */
+}
+
+.survey h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.survey p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #e5e5e5; /* blanc légèrement gris pour lisibilité */
+}
+
+.survey__btn {
+  display: inline-block;
+  background-color: #3b82f6; /* bleu vif */
+  color: white;
+  padding: 14px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s ease;
+}
+
+.survey__btn:hover {
+  background-color: #2563eb; /* bleu plus foncé au hover */
+}
