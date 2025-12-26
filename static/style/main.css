@@ -155,7 +155,7 @@
   }
 
   .main__img-container {
-    justify-content: center; /* 🔥 centers image */
+    justify-content: center; 
   }
 
   #main__img {
@@ -466,3 +466,54 @@
 .survey__btn:hover {
   background-color: #2563eb; /* bleu plus foncé au hover */
 }
+
+/* Partners section */
+.partners {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+
+.partners h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.partners__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.partner__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 16px;
+}
+
+.partner__card img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* Background colors */
+.bg-1 { background-color: #bddfff; }
+.bg-2 { background-color: #bddfff; }
+.bg-3 { background-color: #bddfff; }
+.bg-4 { background-color: #bddfff; }
+
+/* Force 2x2 layout on mobile */
+@media screen and (max-width: 768px) {
+  .partners__container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
