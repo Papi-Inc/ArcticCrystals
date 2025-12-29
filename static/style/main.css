@@ -465,7 +465,7 @@
 }
 
 .survey__btn:hover {
-  background-color: #2563eb; /* bleu plus foncé au hover */
+  background-color: #2563eb; 
 }
 
 /* Partners section */
@@ -493,8 +493,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   border-radius: 16px;
 }
 
@@ -517,6 +517,14 @@
     justify-items: center;
   }
 }
+
+@media (max-width: 992px) {
+  .partners__container {
+    grid-template-columns: 1fr;
+    justify-items: center; 
+  }
+}
+
 
 /* Distribution section */
 .distribution {
